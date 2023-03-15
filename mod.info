@@ -1,4 +1,5 @@
 name=Autotsar Tuning Atelier - Vanilla Cars
 poster=poster.png
 id=ATA_Vanilla
+require=tsarslib_test
 description=

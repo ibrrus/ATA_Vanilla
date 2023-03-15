@@ -45,10 +45,10 @@ module Base
     
     vehicle ATA_CarStationWagon
 	{
-        template = ATAProtection/part/ATAProtectionWindowFrontLeft,
-		part ATAProtectionWindowFrontLeft
+        mechanicType = 1,
+        template = ATA2/part/ATA2ProtectionWindowFrontLeft,
+		part ATA2ProtectionWindowFrontLeft
 		{
-			itemType = Autotsar.ATA_CarStationWagon_ProtectionWindowItem,
 			model Default
 			{
 				file = ATA_CarStationWagon_ProtectionWindowFrontLeft,
@@ -59,14 +59,13 @@ module Base
 		{
 			table uninstall
             {
-				requireUninstalled = ATAProtectionWindowFrontLeft,
+				requireUninstalled = ATA2ProtectionWindowFrontLeft,
 			}
 		}
 		
-		template = ATAProtection/part/ATAProtectionWindowFrontRight,
-		part ATAProtectionWindowFrontRight
+		template = ATA2/part/ATA2ProtectionWindowFrontRight,
+		part ATA2ProtectionWindowFrontRight
 		{
-			itemType = Autotsar.ATA_CarStationWagon_ProtectionWindowItem,
 			model Default
 			{
 				file = ATA_CarStationWagon_ProtectionWindowFrontRight,
@@ -77,14 +76,13 @@ module Base
 		{
 			table uninstall
             {
-				requireUninstalled = ATAProtectionWindowFrontRight,
+				requireUninstalled = ATA2ProtectionWindowFrontRight,
 			}
 		}
 		
-		template = ATAProtection/part/ATAProtectionWindowRearLeft,
-		part ATAProtectionWindowRearLeft
+		template = ATA2/part/ATA2ProtectionWindowRearLeft,
+		part ATA2ProtectionWindowRearLeft
 		{
-			itemType = Autotsar.ATA_CarStationWagon_ProtectionWindowItem,
 			model Default
 			{
 				file = ATA_CarStationWagon_ProtectionWindowRearLeft,
@@ -93,21 +91,15 @@ module Base
 		template = Window/part/WindowRearLeft,
 		part WindowRearLeft
 		{
-			table install
-			{
-				requireInstalled =,
-			}
 			table uninstall
             {
-				requireUninstalled = ATAProtectionWindowRearLeft,
+				requireUninstalled = ATA2ProtectionWindowRearLeft,
 			}
 		}
 		
-		
-		template = ATAProtection/part/ATAProtectionWindowRearRight,
-		part ATAProtectionWindowRearRight
+		template = ATA2/part/ATA2ProtectionWindowRearRight,
+		part ATA2ProtectionWindowRearRight
 		{
-			itemType = Autotsar.ATA_CarStationWagon_ProtectionWindowItem,
 			model Default
 			{
 				file = ATA_CarStationWagon_ProtectionWindowRearRight,
@@ -116,13 +108,9 @@ module Base
 		template = Window/part/WindowRearRight,
 		part WindowRearRight
 		{
-			table install
-			{
-				requireInstalled =,
-			}
 			table uninstall
             {
-				requireUninstalled = ATAProtectionWindowRearRight,
+				requireUninstalled = ATA2ProtectionWindowRearRight,
 			}
 		}
 
@@ -134,10 +122,9 @@ module Base
 			}
 		}
 		
-		template = ATAProtection/part/ATAProtectionWindowFront,
-		part ATAProtectionWindowFront
+		template = ATA2/part/ATA2ProtectionWindowFront,
+		part ATA2ProtectionWindowFront
 		{
-			itemType = Autotsar.ATA_CarStationWagon_ProtectionWindowFrontItem,
 			model Default
 			{
 				file = ATA_CarStationWagon_ProtectionWindowFront,
@@ -148,13 +135,12 @@ module Base
 		{
 			table uninstall
             {
-				requireUninstalled = ATAProtectionWindowFront,
+				requireUninstalled = ATA2ProtectionWindowFront,
 			}
 		}
-		template = ATAProtection/part/ATAProtectionWindowRear,
-		part ATAProtectionWindowRear
+		template = ATA2/part/ATA2ProtectionWindowRear,
+		part ATA2ProtectionWindowRear
 		{
-			itemType = Autotsar.ATA_CarStationWagon_ProtectionWindowRearItem,
 			model Default
 			{
 				file = ATA_CarStationWagon_ProtectionWindowRear,
@@ -165,7 +151,7 @@ module Base
 		{
 			table uninstall
             {
-				requireUninstalled = ATAProtectionWindowRear,
+				requireUninstalled = ATA2ProtectionWindowRear,
 			}
 		}
     }
