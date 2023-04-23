@@ -43,7 +43,7 @@ module Base
 		scale = 0.004,
 	}
     
-    vehicle ATA_CarStationWagon
+    template vehicle ATA_CarStationWagon
 	{
         mechanicType = 1,
         template = ATA2Protection/part/ATA2ProtectionWindowFrontLeft,
