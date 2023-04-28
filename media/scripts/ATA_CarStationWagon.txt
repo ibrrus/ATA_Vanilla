@@ -42,7 +42,259 @@ module Base
 		shader = vehiclewheel,
 		scale = 0.004,
 	}
-    
+    model ATA_CarStationWagon_Bumper_2
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|bamper2,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.0038,
+    }
+    model ATA_CarStationWagon_Bumper_3
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|bamper3,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.0038,
+    }
+    model ATA_CarStationWagon_Bumper_4
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|bamper4,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.0038,
+    }
+    model ATA_CarStationWagon_palatka_base
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|palatka_base,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_palatka_closed
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|palatka_closed,
+        texture = Tuning2/ATA_Jeep_palatka,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_palatka_open
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|palatka_open,
+        texture = Tuning2/ATA_Jeep_openpalatka,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_rooflights_front
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|rooflights_front,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_rooflights_left
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|rooflights_left,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_rooflights_right
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|rooflights_right,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_rooflights_rear
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|rooflights_rear,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_wheelrack
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|roofrack001,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_Cooler
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|Cooler_Ground,
+        texture = clothes/bag/Cooler,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_BigHikingBag
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|backpack,
+        texture = bighikingbagblue,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_Carjack
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|Carjack,
+        texture = WorldItems/CarJack,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_Extinguisher
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|Extinguisher001,
+        texture = WorldItems/Extinguisher,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_GasCan
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|GasCan,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_RadioRed
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|Radio,
+        texture = WorldItems/RadioRed,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_RadioBlack
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|Radio,
+        texture = WorldItems/RadioBlack,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_TirePump
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|TirePump,
+        texture = WorldItems/TirePump,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_ToolBox
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|ToolBox_Ground,
+        texture = clothes/bag/ToolBox,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_cage
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|cage,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|roofrack,
+        texture = Tuning2/ATA_Jeep_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_bag1
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|bag1,
+        texture = DuffelBagBlue,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_bag2
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|bag2,
+        texture = DuffelBagGreen,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_bag3
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|bag3,
+        texture = DuffelBagWhite,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_BoxOfJars1
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|BoxOfJars003,
+        texture = WorldItems/BoxOfJars,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_BoxOfJars2
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|BoxOfJars004,
+        texture = WorldItems/BoxOfJars,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_Bucket
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|Bucket,
+        texture = WorldItems/Bucket,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_FishingNet
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|FishingNet001,
+        texture = WorldItems/FishingNet,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_Generator
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|Generator,
+        texture = WorldItems/Generator,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_Hacksaw
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|Hacksaw,
+        texture = Hacksaw,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_Log
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|Log,
+        texture = Log,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_LugWrench
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|LugWrench,
+        texture = WorldItems/LugWrench,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_PropaneTank1
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|PropaneTank,
+        texture = WorldItems/PropaneTank,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_PropaneTank2
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|PropaneTank001,
+        texture = WorldItems/PropaneTank,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_CarStationWagon_roofrack_w001
+    {
+        mesh = vehicles/ATA_CarStationWagon_armor|w001,
+        texture = WorldItems/TrapCage,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+
     template vehicle ATA_CarStationWagon
 	{
         mechanicType = 1,
@@ -62,7 +314,6 @@ module Base
 				file = ATA_CarStationWagon_ProtectionWindowFrontRight,
 			}
 		}
-		
 		template = ATA2Protection/part/ATA2ProtectionWindowRearLeft,
 		part ATA2ProtectionWindowRearLeft
 		{
@@ -79,7 +330,6 @@ module Base
 				file = ATA_CarStationWagon_ProtectionWindowRearRight,
 			}
 		}
-        
 		template = ATA2Protection/part/ATA2ProtectionWindshield,
 		part ATA2ProtectionWindshield
 		{
@@ -96,5 +346,195 @@ module Base
 				file = ATA_CarStationWagon_ProtectionWindowRear,
 			}
 		}
+        template = ATA2Bumpers/part/ATA2Bumper,
+        part ATA2Bumper 
+        {
+            model Bumper2
+            {
+                file = ATA_CarStationWagon_Bumper_2,
+            }
+            model Bumper3
+            {
+                file = ATA_CarStationWagon_Bumper_3,
+            }
+            model Bumper4
+            {
+                file = ATA_CarStationWagon_Bumper_4,
+            }
+        }
+        template = ATA2RoofTent/part/ATA2RoofTent,
+        template! = ATA2RoofMiddleTentSetting,
+        part ATA2RoofTent
+        {
+            model Default
+            {
+                file = ATA_CarStationWagon_palatka_base,
+            }
+            model Open
+            {
+                file = ATA_CarStationWagon_palatka_open,
+            }
+            model Close
+            {
+                file = ATA_CarStationWagon_palatka_closed,
+            }
+        }
+        template = ATARoofLights,
+        part ATARoofLightLeft
+        {
+            model Default
+            {
+                file = ATA_CarStationWagon_rooflights_left,
+            }
+            table install
+            {
+                requireInstalled = ATA2RoofBase,
+            }
+        }
+        part ATARoofLightRight
+        {
+            model Default
+            {
+                file = ATA_CarStationWagon_rooflights_right,
+            }
+            table install
+            {
+                requireInstalled = ATA2RoofBase,
+            }
+        }
+        part ATARoofLightFront
+        {
+            model Default
+            {
+                file = ATA_CarStationWagon_rooflights_front,
+            }
+            table install
+            {
+                requireInstalled = ATA2RoofBase,
+            }
+        }
+        part ATARoofLightRear
+        {
+            model Default
+            {
+                file = ATA_CarStationWagon_rooflights_rear,
+            }
+            table install
+            {
+                requireInstalled = ATA2RoofBase,
+            }
+        }
+        template = ATA2InteractiveTrunk/part/ATA2InteractiveTrunkWheelRack,
+        part ATA2InteractiveTrunkWheelRack
+        {
+            model WheelRack
+            {
+                file = ATA_CarStationWagon_wheelrack,
+            }
+            model Cooler
+            {
+                file = ATA_CarStationWagon_Cooler,
+            }
+            model BigHikingBag
+            {
+                file = ATA_CarStationWagon_BigHikingBag,
+            }
+            model Jack
+            {
+                file = ATA_CarStationWagon_Carjack,
+            }
+            model Extinguisher
+            {
+                file = ATA_CarStationWagon_Extinguisher,
+            }
+            model GasCan
+            {
+                file = ATA_CarStationWagon_GasCan,
+            }
+            model Radio
+            {
+                file = ATA_CarStationWagon_RadioBlack,
+            }
+            model TirePump
+            {
+                file = ATA_CarStationWagon_TirePump,
+            }
+            model ToolBox
+            {
+                file = ATA_CarStationWagon_ToolBox,
+            }
+        }
+        template = ATA2InteractiveTrunk/part/ATA2RoofBase,
+        part ATA2RoofBase 
+        {
+            model Default
+            {
+                file = ATA_CarStationWagon_cage,
+            }
+        }
+        template = ATA2InteractiveTrunk/part/ATA2InteractiveTrunkRoofRack,
+        part ATA2InteractiveTrunkRoofRack
+        {
+            model ATA_CarStationWagon_roofrack
+            {
+                file = ATA_CarStationWagon_roofrack,
+            }
+            model ATA_CarStationWagon_roofrack_bag1
+            {
+                file = ATA_CarStationWagon_roofrack_bag1,
+            }
+            model ATA_CarStationWagon_roofrack_bag2
+            {
+                file = ATA_CarStationWagon_roofrack_bag2,
+            }
+            model ATA_CarStationWagon_roofrack_bag3
+            {
+                file = ATA_CarStationWagon_roofrack_bag3,
+            }
+            model ATA_CarStationWagon_roofrack_BoxOfJars1
+            {
+                file = ATA_CarStationWagon_roofrack_BoxOfJars1,
+            }
+            model ATA_CarStationWagon_roofrack_BoxOfJars2
+            {
+                file = ATA_CarStationWagon_roofrack_BoxOfJars2,
+            }
+            model ATA_CarStationWagon_roofrack_Bucket
+            {
+                file = ATA_CarStationWagon_roofrack_Bucket,
+            }
+            model ATA_CarStationWagon_roofrack_FishingNet
+            {
+                file = ATA_CarStationWagon_roofrack_FishingNet,
+            }
+            model ATA_CarStationWagon_roofrack_Generator
+            {
+                file = ATA_CarStationWagon_roofrack_Generator,
+            }
+            model ATA_CarStationWagon_roofrack_Hacksaw
+            {
+                file = ATA_CarStationWagon_roofrack_Hacksaw,
+            }
+            model ATA_CarStationWagon_roofrack_Log
+            {
+                file = ATA_CarStationWagon_roofrack_Log,
+            }
+            model ATA_CarStationWagon_roofrack_LugWrench
+            {
+                file = ATA_CarStationWagon_roofrack_LugWrench,
+            }
+            model ATA_CarStationWagon_roofrack_PropaneTank1
+            {
+                file = ATA_CarStationWagon_roofrack_PropaneTank1,
+            }
+            model ATA_CarStationWagon_roofrack_PropaneTank2
+            {
+                file = ATA_CarStationWagon_roofrack_PropaneTank2,
+            }
+            model ATA_CarStationWagon_roofrack_w001
+            {
+                file = ATA_CarStationWagon_roofrack_w001,
+            }
+        }
     }
 }

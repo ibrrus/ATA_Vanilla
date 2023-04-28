@@ -1,0 +1,175 @@
+module Base
+{
+    model ATA_PickUpTruck_ProtectionWindowFrontLeft
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|armor_wfrontleft,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_PickUpTruck_ProtectionWindowFrontRight
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|armor_wfrontright,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+
+    model ATA_PickUpTruck_ProtectionWindowFront
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|armor_wfront,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_PickUpTruck_ProtectionWindowRear
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|armor_wback,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+
+    model ATA_PickUpTruck_rack_bag1
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|rack_bag1,
+        texture = DuffelBagBlue,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_PickUpTruck_rack_bag2
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|rack_bag2,
+        texture = DuffelBagGreen,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_PickUpTruck_rack_bag3
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|rack_bag3,
+        texture = DuffelBagWhite,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_PickUpTruck_rack_bag4
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|rack_bag4,
+        texture = DuffelBagBlue,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_PickUpTruck_rack_Log1
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|rack_Log1,
+        texture = Log,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_PickUpTruck_rack_Log2
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|rack_Log2,
+        texture = Log,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+     model ATA_PickUpTruck_rack_Log3
+    {
+        mesh = vehicles/ATA_PickUpTruck_armor|rack_Log3,
+        texture = Log,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    
+    template vehicle ATA_PickUpTruck
+    {
+        template = ATA2Protection/part/ATA2ProtectionWindowFrontLeft,
+        part ATA2ProtectionWindowFrontLeft
+        {
+            model Default
+            {
+                file = ATA_PickUpTruck_ProtectionWindowFrontLeft,
+            }
+        }
+        template = ATA2Protection/part/ATA2ProtectionWindowFrontRight,
+        part ATA2ProtectionWindowFrontRight
+        {
+            model Default
+            {
+                file = ATA_PickUpTruck_ProtectionWindowFrontRight,
+            }
+        }
+        template = ATA2Protection/part/ATA2ProtectionWindshield,
+        part ATA2ProtectionWindshield
+        {
+            model Default
+            {
+                file = ATA_PickUpTruck_ProtectionWindowFront,
+            }
+        }
+        template = ATA2Protection/part/ATA2ProtectionWindshieldRear,
+        part ATA2ProtectionWindshieldRear
+        {
+            model Default
+            {
+                file = ATA_PickUpTruck_ProtectionWindowRear,
+            }
+        }
+        part TruckBedOpen
+        {
+            container
+            {
+                conditionAffectsCapacity = true,
+                test = ATATuning.ContainerAccess.ATAInteractiveTrunk,
+            }
+            lua
+            {
+                create = ATATuning.Create.DefaultATAInteractiveTrunk,
+                init = ATATuning.Init.ATAInteractiveTrunk,
+            }
+            model ATA_PickUpTruck_rack_bag1
+            {
+                file = ATA_PickUpTruck_rack_bag1,
+            }
+            model ATA_PickUpTruck_rack_bag2
+            {
+                file = ATA_PickUpTruck_rack_bag2,
+            }
+            model ATA_PickUpTruck_rack_bag3
+            {
+                file = ATA_PickUpTruck_rack_bag3,
+            }
+            model ATA_PickUpTruck_rack_bag4
+            {
+                file = ATA_PickUpTruck_rack_bag4,
+            }
+            model ATA_PickUpTruck_rack_Log1
+            {
+                file = ATA_PickUpTruck_rack_Log1,
+            }
+            model ATA_PickUpTruck_rack_Log2
+            {
+                file = ATA_PickUpTruck_rack_Log2,
+            }
+            model ATA_PickUpTruck_rack_Log3
+            {
+                file = ATA_PickUpTruck_rack_Log3,
+            }
+            table interactiveItems 
+            {
+                fullness
+                {
+                    1 = ATA_PickUpTruck_rack_bag1,
+                    2 = ATA_PickUpTruck_rack_bag2,
+                    3 = ATA_PickUpTruck_rack_bag3,
+                    4 = ATA_PickUpTruck_rack_bag4,
+                }
+                Log#LogStacks2#LogStacks3#LogStacks4#Plank
+                {
+                    1 = ATA_PickUpTruck_rack_Log1,
+                    2 = ATA_PickUpTruck_rack_Log2,
+                    3 = ATA_PickUpTruck_rack_Log3,
+                }
+            }
+        }
+    }
+}

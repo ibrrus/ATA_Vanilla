@@ -13,12 +13,12 @@ end
 local carRecipe = "Basic Tuning"
 
 local NewCarTuningTable = {}
-NewCarTuningTable["CarStationWagon"] = {
-    addPartsFromVehicleScript = "ATA_CarStationWagon",
+NewCarTuningTable["PickUpTruck"] = {
+    addPartsFromVehicleScript = "ATA_PickUpTruck",
     parts = {}
 }
 
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowFrontLeft"] = {
+NewCarTuningTable["PickUpTruck"].parts["ATA2ProtectionWindowFrontLeft"] = {
     Default = {
         icon = "media/ui/tuning2/protection_window_side.png",
         category = "Protection",
@@ -52,26 +52,12 @@ NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowFrontLeft"] = {
     }
 }
 
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowFrontRight"] = copy(NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowFrontLeft"])
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowFrontRight"].Default.protection = {"WindowFrontRight"}
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowFrontRight"].Default.disableOpenWindowFromSeat = "SeatFrontRight"
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowFrontRight"].Default.install.requireInstalled = {"WindowFrontRight"}
+NewCarTuningTable["PickUpTruck"].parts["ATA2ProtectionWindowFrontRight"] = copy(NewCarTuningTable["PickUpTruck"].parts["ATA2ProtectionWindowFrontLeft"])
+NewCarTuningTable["PickUpTruck"].parts["ATA2ProtectionWindowFrontRight"].Default.protection = {"WindowFrontRight"}
+NewCarTuningTable["PickUpTruck"].parts["ATA2ProtectionWindowFrontRight"].Default.disableOpenWindowFromSeat = "SeatFrontRight"
+NewCarTuningTable["PickUpTruck"].parts["ATA2ProtectionWindowFrontRight"].Default.install.requireInstalled = {"WindowFrontRight"}
 
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowRearLeft"] = copy(NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowFrontLeft"])
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowRearLeft"].Default.protection = {"WindowRearLeft"}
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowRearLeft"].Default.disableOpenWindowFromSeat = "SeatRearLeft"
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowRearLeft"].Default.install.requireInstalled = {"WindowRearLeft"}
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowRearLeft"].Default.install.use = {
-    MetalBar = 6,
-    BlowTorch = 6,
-}
-
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowRearRight"] = copy(NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowRearLeft"])
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowRearRight"].Default.protection = {"WindowRearRight"}
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowRearRight"].Default.disableOpenWindowFromSeat = "SeatRearRight"
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindowRearRight"].Default.install.requireInstalled = {"WindowRearRight"}
-
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindshield"] = {
+NewCarTuningTable["PickUpTruck"].parts["ATA2ProtectionWindshield"] = {
     Default = {
         icon = "media/ui/tuning2/protection_window_windshield.png",
         category = "Protection",
@@ -112,7 +98,7 @@ NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindshield"] = {
     }
 }
 
-NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindshieldRear"] = {
+NewCarTuningTable["PickUpTruck"].parts["ATA2ProtectionWindshieldRear"] = {
     Default = {
         icon = "media/ui/tuning2/protection_window_windshield.png",
         category = "Protection",
@@ -146,6 +132,8 @@ NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWindshieldRear"] = {
     }
 }
 
-NewCarTuningTable["CarStationWagon2"] = NewCarTuningTable["CarStationWagon"]
+NewCarTuningTable["PickUpTruckLights"] = NewCarTuningTable["PickUpTruck"]
+NewCarTuningTable["PickUpTruckLightsFire"] = NewCarTuningTable["PickUpTruck"]
+NewCarTuningTable["PickUpTruckMccoy"] = NewCarTuningTable["PickUpTruck"]
 
 ATA2Tuning_AddNewCars(NewCarTuningTable)
