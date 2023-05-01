@@ -1,0 +1,40 @@
+module Base
+{
+    model ATA_WheelProtection
+    {
+        mesh = vehicles/ATA_Vanilla_wheel|wheel_chain,
+        texture = Tuning2/ATA_wheelchain,
+        shader = vehiclewheel,
+        invertX = TRUE,
+        scale = 0.004,
+    }
+    
+    template vehicle ATA_WheelProtection
+    {
+        part Tire*
+        {
+            setAllModelsVisible = false,
+            model ATAProtection
+            {
+                file = ATA_WheelProtection,
+            }
+            table install
+            {
+                complete = ATATuning2.InstallComplete.TireNotAllModelsVisible,
+            }
+            table uninstall
+            {
+                requireUninstalled = ATA2ProtectionWheels,
+                complete = ATATuning2.UninstallComplete.TireNotAllModelsVisible,
+            }
+            lua
+            {
+                create = Vehicles.Create.Tire,
+                init = ATATuning2.Init.TireNotAllModelsVisible,
+                checkOperate = Vehicles.CheckOperate.Tire,
+                update = Vehicles.Update.Tire,
+            }
+        }
+        template = ATA2Protection/part/ATA2ProtectionWheels,
+    }
+}

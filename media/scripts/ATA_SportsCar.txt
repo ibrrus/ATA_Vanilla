@@ -1,0 +1,46 @@
+module Base
+{
+    model ATA_SportsCar_Bullbar1
+    {
+        mesh = vehicles/ATA_SportsCar_armor|Bumper1,
+        texture = Tuning2/ATA_Mustang_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    
+    model ATA_SportsCar_Bullbar2
+    {
+        mesh = vehicles/ATA_SportsCar_armor|Bumper2,
+        texture = Tuning2/ATA_Mustang_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    
+    model ATA_SportsCar_Bullbar3
+    {
+        mesh = vehicles/ATA_SportsCar_armor|Bumper3,
+        texture = Tuning2/ATA_Mustang_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    
+    template vehicle ATA_SportsCar
+    {
+        template = ATA2Bullbars/part/ATA2Bullbar,
+        part ATA2Bullbar 
+        {
+            model ATABullbar1
+            {
+                file = ATA_SportsCar_Bullbar1,
+            }
+            model ATABullbar2
+            {
+                file = ATA_SportsCar_Bullbar2,
+            }
+            model ATABullbar3
+            {
+                file = ATA_SportsCar_Bullbar3,
+            }
+        }
+    }
+}

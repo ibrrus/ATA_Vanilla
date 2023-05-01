@@ -1,0 +1,508 @@
+module Base
+{
+    model ATA_Van_WheelProtection
+    {
+        mesh = vehicles/ATA_Vanilla_wheel|wheel_chain,
+        texture = Tuning2/ATA_wheelchain,
+        shader = vehiclewheel,
+        invertX = TRUE,
+        scale = 0.004,
+    }
+    model ATA_Van_armor_engine
+    {
+        mesh = vehicles/ATA_Van_armor|armor_hood,
+        texture = Tuning2/ATA_VanDeRumba_items2,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_armor_engine_color
+    {
+        mesh = vehicles/ATA_Van_armor|armor_hood,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_armor_frontwindow
+    {
+        mesh = vehicles/ATA_Van_armor|armor_window_front,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_armor_rearwindow
+    {
+        mesh = vehicles/ATA_Van_armor|armor_window_rear,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_armor_leftwindow
+    {
+        mesh = vehicles/ATA_Van_armor|armor_window_left,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_armor_rightwindow
+    {
+        mesh = vehicles/ATA_Van_armor|armor_window_right,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_SpareWheel
+    {
+        mesh = vehicles/ATA_Van_armor|wheel_5,
+        texture = Vehicles/vehicle_wheel,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_SpareWheel_static
+    {
+        mesh = vehicles/ATA_Van_armor|wheel_attach,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_Bullbar_1
+    {
+        mesh = vehicles/ATA_Van_armor|bumper1,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_Bullbar_2
+    {
+        mesh = vehicles/ATA_Van_armor|bumper2,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_Bullbar_3
+    {
+        mesh = vehicles/ATA_Van_armor|bumper3,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_BullbarLights
+    {
+        mesh = vehicles/ATA_Van_armor|bumper_lights,
+        shader = vehicle,
+        scale = 0.004,
+    }
+    model ATA_Van_cage
+    {
+        mesh = vehicles/ATA_Van_armor|roof_cage,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof
+    {
+        mesh = vehicles/ATA_Van_armor|roof_trunk,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_bag1
+    {
+        mesh = vehicles/ATA_Van_armor|roof_bag1,
+        texture = DuffelBagBlue,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_bag2
+    {
+        mesh = vehicles/ATA_Van_armor|roof_bag2,
+        texture = DuffelBagGreen,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_bag3
+    {
+        mesh = vehicles/ATA_Van_armor|roof_bag3,
+        texture = DuffelBagWhite,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_bag4
+    {
+        mesh = vehicles/ATA_Van_armor|roof_bag4,
+        texture = DuffelBagGrey,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_bag5
+    {
+        mesh = vehicles/ATA_Van_armor|roof_bag5,
+        texture = DuffelBagWhite,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_bag6
+    {
+        mesh = vehicles/ATA_Van_armor|roof_bag6,
+        texture = DuffelBagGreen,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_barrel
+    {
+        mesh = vehicles/ATA_Van_armor|roof_barrel,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_gascan0
+    {
+        mesh = vehicles/ATA_Van_armor|roof_GasCan0,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_gascan1
+    {
+        mesh = vehicles/ATA_Van_armor|roof_GasCan1,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_gascan2
+    {
+        mesh = vehicles/ATA_Van_armor|roof_GasCan2,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_gascan3
+    {
+        mesh = vehicles/ATA_Van_armor|roof_GasCan3,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_gascan4
+    {
+        mesh = vehicles/ATA_Van_armor|roof_GasCan4,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_gascan5
+    {
+        mesh = vehicles/ATA_Van_armor|roof_GasCan5,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_gascan6
+    {
+        mesh = vehicles/ATA_Van_armor|roof_GasCan6,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_gascan7
+    {
+        mesh = vehicles/ATA_Van_armor|roof_GasCan7,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_gascan8
+    {
+        mesh = vehicles/ATA_Van_armor|roof_GasCan8,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_gascan8
+    {
+        mesh = vehicles/ATA_Van_armor|roof_GasCan8,
+        texture = GasCan,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_light_front
+    {
+        mesh = vehicles/ATA_Van_armor|roof_light_front,
+        shader = vehicle,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_light_left
+    {
+        mesh = vehicles/ATA_Van_armor|roof_light_left,
+        shader = vehicle,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_light_rear
+    {
+        mesh = vehicles/ATA_Van_armor|roof_light_rear,
+        shader = vehicle,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_light_right
+    {
+        mesh = vehicles/ATA_Van_armor|roof_light_right,
+        shader = vehicle,
+        scale = 0.004,
+    }
+    
+    model ATA_Van_roof_toolbox
+    {
+        mesh = vehicles/ATA_Van_armor|roof_toolbox,
+        texture = Tuning2/ATA_VanDeRumba_items3,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    model ATA_Van_roof_lader
+    {
+        mesh = vehicles/ATA_Van_armor|ladder,
+        texture = Tuning2/ATA_VanDeRumba_items,
+        shader = vehiclewheel,
+        scale = 0.004,
+    }
+    
+    template vehicle ATA_Van
+    {
+        template = ATA2Protection/part/ATA2ProtectionHood,
+        part ATA2ProtectionHood
+        {
+            model Default
+            {
+                file = ATA_Van_armor_engine,
+            }
+            model Color
+            {
+                file = ATA_Van_armor_engine_color,
+            }
+        }
+        
+        template = ATA2Protection/part/ATA2ProtectionWindshield,
+        part ATA2ProtectionWindshield
+        {
+            model Default
+            {
+                file = ATA_Van_armor_frontwindow,
+            }
+        }
+
+        template = ATA2Protection/part/ATA2ProtectionWindowFrontLeft,
+        part ATA2ProtectionWindowFrontLeft
+        {
+            model Default
+            {
+                file = ATA_Van_armor_leftwindow,
+            }
+        }
+
+        template = ATA2Protection/part/ATA2ProtectionWindowFrontRight,
+        part ATA2ProtectionWindowFrontRight
+        {
+            model Default
+            {
+                file = ATA_Van_armor_rightwindow,
+            }
+        }
+        
+        template = ATA2Protection/part/ATA2ProtectionWindshieldRear,
+        part ATA2ProtectionWindshieldRear
+        {
+            model Default
+            {
+                file = ATA_Van_armor_rearwindow,
+            }
+        }
+        
+        template = ATA2Bullbars/part/ATA2Bullbar,
+        part ATA2Bullbar
+        {
+            model ATAVanDeRumbaBullbar1
+            {
+                file = ATA_Van_Bullbar_1,
+            }
+            model ATAVanDeRumbaBullbar2
+            {
+                file = ATA_Van_Bullbar_2,
+            }
+            model ATAVanDeRumbaBullbar3
+            {
+                file = ATA_Van_Bullbar_3,
+            }
+            model ATAVanDeRumbaBullbarLights
+            {
+                file = ATA_Van_BullbarLights,
+            }
+        }
+        part DoorRear
+        {
+            table uninstall
+            {
+                requireUninstalled = WindshieldRear;ATASpareWheel;ATA2VisualLadder,
+                test = ATATuning2.UninstallTest.multiRequire,
+            }
+        }
+        
+        template = ATASpareWheel/part/ATASpareWheel,
+        part ATASpareWheel
+        {
+            setAllModelsVisible = true,
+            itemType = Base.OldTire2;Base.NormalTire2;Base.ModernTire2,
+            model Default
+            {
+                file = ATA_Van_SpareWheel,
+            }
+            model StaticPart
+            {
+                file = ATA_Van_SpareWheel_static,
+            }
+            table install
+            {
+                requireInstalled = DoorRear,
+            }
+        }
+        template = ATA2Visual/part/ATA2VisualLadder,
+        part ATA2VisualLadder
+        {
+            area = TruckBed,
+            model Default
+            {
+                file = ATA_Van_roof_lader,
+            }
+        }
+        template = ATA2InteractiveTrunk/part/ATA2RoofBase,
+        part ATA2RoofBase
+        {
+            model Default
+            {
+                file = ATA_Van_cage,
+            }
+        }
+        template = ATA2InteractiveTrunk/part/ATA2InteractiveTrunkRoofRack,
+        part ATA2InteractiveTrunkRoofRack
+        {
+            model ATA_Van_roof
+            {
+                file = ATA_Van_roof,
+            }
+            model ATA_Van_roof_bag1
+            {
+                file = ATA_Van_roof_bag1,
+            }
+            model ATA_Van_roof_bag2
+            {
+                file = ATA_Van_roof_bag2,
+            }
+            model ATA_Van_roof_bag3
+            {
+                file = ATA_Van_roof_bag3,
+            }
+            model ATA_Van_roof_bag4
+            {
+                file = ATA_Van_roof_bag4,
+            }
+            model ATA_Van_roof_bag5
+            {
+                file = ATA_Van_roof_bag5,
+            }
+            model ATA_Van_roof_bag6
+            {
+                file = ATA_Van_roof_bag6,
+            }
+            model ATA_Van_roof_barrel
+            {
+                file = ATA_Van_roof_barrel,
+            }
+            model ATA_Van_roof_gascan0
+            {
+                file = ATA_Van_roof_gascan0,
+            }
+            model ATA_Van_roof_gascan1
+            {
+                file = ATA_Van_roof_gascan1,
+            }
+            model ATA_Van_roof_gascan2
+            {
+                file = ATA_Van_roof_gascan2,
+            }
+            model ATA_Van_roof_gascan3
+            {
+                file = ATA_Van_roof_gascan3,
+            }
+            model ATA_Van_roof_gascan4
+            {
+                file = ATA_Van_roof_gascan4,
+            }
+            model ATA_Van_roof_gascan5
+            {
+                file = ATA_Van_roof_gascan5,
+            }
+            model ATA_Van_roof_gascan6
+            {
+                file = ATA_Van_roof_gascan6,
+            }
+            model ATA_Van_roof_gascan7
+            {
+                file = ATA_Van_roof_gascan7,
+            }
+            model ATA_Van_roof_gascan8
+            {
+                file = ATA_Van_roof_gascan8,
+            }
+        }
+        template = ATA2InteractiveTrunk/part/ATA2RoofRackToolbox,
+        part ATA2RoofRackToolbox
+        {
+            model Default
+            {
+                file = ATA_Van_roof_toolbox,
+            }
+        }
+        template = ATARoofLights,
+        part ATARoofLightLeft
+        {
+            model Default
+            {
+                file = ATA_Van_roof_light_left,
+            }
+            table install
+            {
+                requireInstalled = ATA2RoofBase,
+            }
+        }
+        part ATARoofLightRight
+        {
+            model Default
+            {
+                file = ATA_Van_roof_light_right,
+            }
+            table install
+            {
+                requireInstalled = ATA2RoofBase,
+            }
+        }
+        part ATARoofLightFront
+        {
+            model Default
+            {
+                file = ATA_Van_roof_light_front,
+            }
+            table install
+            {
+                requireInstalled = ATA2RoofBase,
+            }
+        }
+        part ATARoofLightRear
+        {
+            model Default
+            {
+                file = ATA_Van_roof_light_rear,
+            }
+            table install
+            {
+                requireInstalled = ATA2RoofBase,
+            }
+        }
+    }
+}

@@ -14,7 +14,7 @@ local carRecipe = "Basic Tuning"
 
 local NewCarTuningTable = {}
 NewCarTuningTable["CarStationWagon"] = {
-    addPartsFromVehicleScript = "ATA_CarStationWagon",
+    addPartsFromVehicleScript = {"ATA_CarStationWagon", "ATA_WheelProtection"},
     parts = {}
 }
 
@@ -517,6 +517,51 @@ NewCarTuningTable["CarStationWagon"].parts["ATA2InteractiveTrunkWheelRack"] = {
                 MetalWelding = 2,
             },
             result = "auto",
+            time = 40,
+        }
+    }
+}
+
+NewCarTuningTable["CarStationWagon"].parts["ATA2ProtectionWheels"] = { -- не забыть сделать особые настройки колес
+    ATAProtection = {
+        removeIfBroken = true,
+        icon = "media/ui/tuning2/wheel_chain.png",
+        category = "Protection", 
+        protectionModel = true, 
+        protection = {"TireFrontLeft", "TireFrontRight", "TireRearLeft", "TireRearRight"}, 
+        install = { 
+            sound = "ATA2InstallWheelChain",
+            use = { 
+                ATAProtectionWheelsChain = 1,
+                BlowTorch = 4,
+            },
+            tools = { 
+                bodylocation = "Base.WeldingMask", 
+                primary = "Base.Wrench",
+            },
+            skills = {
+                Mechanics = 2,
+                MetalWelding = 3,
+            },
+            recipes = {"Basic Tuning"},
+            requireInstalled = {"TireFrontLeft", "TireFrontRight", "TireRearLeft", "TireRearRight"},
+            time = 65, 
+        },
+        uninstall = {
+            sound = "ATA2InstallWheelChain",
+            use = {
+                BlowTorch=4,
+            },
+            tools = {
+                bodylocation = "Base.WeldingMask",
+                both = "Base.Crowbar",
+            },
+            skills = {
+                MetalWelding = 2,
+            },
+            result = {
+                UnusableMetal=2,
+            },
             time = 40,
         }
     }
